@@ -54,17 +54,7 @@ window.addEventListener("DOMContentLoaded", () => {
         "Museum belongs to faculty of mathematics and computer science GRSU";
       reloadFooterHeight();
     } else {
-      dropdownText.innerHTML = "RU";
-      title.innerHTML = "Музей ФаМИ";
-      logoText.innerHTML = "ФаМИ музей";
-      textTop.innerHTML = "Выставка";
-      textMain.innerHTML = "старая<br>вычислительная<br>техника";
-      textBottom.innerHTML = "интерактивная экскурсия";
-      contacts.innerHTML = "Контакты";
-      about.innerHTML = "О музее";
-      footerText.innerHTML =
-        "Музей факультета математики и информатики ГрГУ";
-    footer.style.height = '100%';
+      location.reload();
     }
     hideDropdown();
   }

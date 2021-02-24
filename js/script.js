@@ -20,6 +20,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   function hideDropdown() {
     dropdownExpanded.classList.toggle("hidden");
+    dropdownText.classList.toggle('hidden');
   }
   dropdownTriangle.addEventListener("click", () => {
     hideDropdown();

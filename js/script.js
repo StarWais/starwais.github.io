@@ -26,12 +26,6 @@ window.addEventListener("DOMContentLoaded", () => {
     hideDropdown();
   });
 
-  function reloadFooterHeight() {
-    footer.style.height = `${
-      window.screen.availHeight - header.scrollHeight - promo.scrollHeight
-    }px`;
-  }
-
   promoTabs.forEach((tab) => {
     tab.addEventListener("click", () => {
       promoTabs.forEach((el) => {
@@ -53,7 +47,6 @@ window.addEventListener("DOMContentLoaded", () => {
       about.innerHTML = "About museum";
       footerText.innerHTML =
         "Museum belongs to faculty of mathematics and computer science GRSU";
-      reloadFooterHeight();
     } else {
       location.reload();
     }
